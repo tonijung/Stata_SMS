@@ -19,12 +19,15 @@ This set of files will allow a text message (SMS) to be sent when the `.do` ends
 
 ## Set up
 The default directory is `C:\SMS\`
+
 1. Download [Stata_SMS-master](https://github.com/tonijung/Stata_SMS/archive/master.zip) and extract the `Stata_SMS-master` folder's `run_me.bat` and `test.py` files to the same folder as the `.do` file that you're planning on using. 
 2. In `run_me.bat`..
-3. Update the path to your Stata installation in line 3. The default is set to `"C:\Program Files (x86)\Stata12\StataSE-64.exe"`
-4. On line 3, update the path to the `.do` file you'd like to run. The default is set to `C:\SMS\test.do`.
-5. On line 4, update the path to your installation of Python. The default is set to `C:\Python27\python.exe`
-6. On line 4, update the path to where you've extracted the `test.py` file to. The default is set to `C:\SMS\test.py`
-7. In `test.py`..
-8. On line 8, insert your email information into the relevant fields. The default is for gmail.
-9. On line 9, update the relevant fields. The `'<author>'` and `'<message here>'`field is optional, but you'll want to update the second field with either your phone number that will receive the SMS or the email you wish to send the alert to. the default is set to AT&T. Notes for different carriers and email providers are listed in the URL in the python script. 
+   1. Update the path to your Stata installation in line 3. The default is set to `"C:\Program Files (x86)\Stata12\StataSE-64.exe"`
+   2. On line 3, update the path to the `.do` file you'd like to run. The default is set to `C:\SMS\test.do`.
+   3. On line 4, update the path to your installation of Python. The default is set to `C:\Python27\python.exe`
+   4. On line 4, update the path to where you've extracted the `test.py` file to. The default is set to `C:\SMS\test.py`
+3. In `test.py`..
+   1. On line 8, insert your email information into the relevant fields. The default is for gmail.
+   2. On line 9, update the relevant fields. The `'<author>'` and `'<message here>'`field is optional, but you'll want to update the second field with either your phone number that will receive the SMS or the email you wish to send the alert to. the default is set to AT&T. 
+
+Notes for different carriers and email providers are listed in the URL in the python script. 
